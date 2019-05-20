@@ -25,9 +25,6 @@ LHE --> Step0 (GEN-SIM) --> Step 1 (GEN-SIM-RAW) --> Step 2 (AOD) --> Step3 (Ntu
 
 ## Data sets 
 
-step2 AOD files and step3 ntuples are provided in:
-https://github.com/cms-legacydata-analyses/TrackerRecHitProducerTool/tree/master/lists
-
 | Data set name | Description | Number of events | Number of files |
 | :---------------------- | :---------------------- | -----------------: | ----------------------: |
 | QCD300to600 | QCD, flat pT hat spectrum, 300 < pT hat < 600 GeV | 1497600 | 2496 |
@@ -84,18 +81,6 @@ https://github.com/cms-legacydata-analyses/TrackerRecHitProducerTool/blob/master
 2) run CMSSW:
 
 ```cmsRun configs/step3.py```
-
-## Read root ntuple files
-
-An example of how to read the content of step3 ntuples can be found in the example folder.
-(need pyROOT and matplotlib installed)
-
-```cd example
-xrdcp root://eospublic.cern.ch//eos/opendata/cms/upload/emanuele/step3_QCD600to3000/savehits_output_1.root .
-python3 example.py
-```
-A scatter plot of the hits from three events should be displayed.
-![scatter plot](example/Figure_1.png?raw=true "Scatter plot")
 
 ## Data set content
 
